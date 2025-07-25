@@ -23,7 +23,7 @@ bool isWeb() => overrideDebugWebValue || kIsWeb;
 double platformMiniFontSize() {
   try {
     if (isWeb()) {
-      return 1; // Web is not allowed font size less than 1
+      return 20; // Web is not allowed font size less than 1
     }
     return double.minPositive;
   } catch (_) {
